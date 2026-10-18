@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshBite Kitchen shares easy healthy recipes, balanced meal ideas, and simple Sri Lankan favourites in English and Sinhala.">
+  <meta name="theme-color" content="#1e5a43">
+  <title>FreshBite Kitchen | Healthy Recipes Made Simple</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="#" aria-label="FreshBite Kitchen home">
+        <span class="brand-mark">🥑</span>
+        <span><strong>FreshBite</strong><small> KITCHEN</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" data-en="Home" data-si="මුල් පිටුව">Home</a>
+        <a href="#recipes" data-en="Recipes" data-si="වට්ටෝරු">Recipes</a>
+        <a href="#categories" data-en="Categories" data-si="වර්ග">Categories</a>
+        <a href="#about" data-en="About" data-si="අප ගැන">About</a>
+        <a href="#contact" data-en="Contact" data-si="සම්බන්ධ වන්න">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" id="languageToggle" type="button" aria-label="Switch language">සිංහල</button>
+        <a class="header-cta" href="#recipes" data-en="Find a recipe" data-si="වට්ටෝරුවක් සොයන්න">Find a recipe</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow" data-en="GOOD FOOD, FEEL-GOOD DAYS" data-si="හොඳ ආහාර • සතුටුදායක දවසක්">GOOD FOOD, FEEL-GOOD DAYS</span>
+        <h1 data-en="Small steps to a <em>healthier you.</em>" data-si="සෞඛ්‍යමත් ඔබක් සඳහා <em>පුංචි පියවර.</em>">Small steps to a <em>healthier you.</em></h1>
+        <p data-en="Fresh, simple recipes for busy days — from colourful breakfasts to Sri Lankan favourites with a fresh twist." data-si="කාර්යබහුල දවස්වලට ගැළපෙන නැවුම්, පහසු වට්ටෝරු — වර්ණවත් උදෑසන ආහාරවල සිට අලුත් රසයකින් යුතු ශ්‍රී ලාංකික කෑම දක්වා.">Fresh, simple recipes for busy days — from colourful breakfasts to Sri Lankan favourites with a fresh twist.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#recipes" data-en="Explore recipes ↗" data-si="වට්ටෝරු බලන්න ↗">Explore recipes ↗</a>
+          <a class="button button-outline" href="#about" data-en="Our approach" data-si="අපේ අරමුණ">Our approach</a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✓</span><span data-en="Everyday ingredients · Beginner-friendly · Made with care" data-si="දිනපතා භාවිත කරන ද්‍රව්‍ය · ආරම්භකයන්ට පහසු · ආදරයෙන් සකස් කළ">Everyday ingredients · Beginner-friendly · Made with care</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Healthy meal illustration">
+        <div class="sun-shape"></div>
+        <div class="food-card food-card-main">
+          <div class="food-emoji">🥗</div>
+          <span data-en="Fresh & colourful" data-si="නැවුම් හා වර්ණවත්">Fresh & colourful</span>
+        </div>
+        <div class="floating-pill pill-one">🍓 <span data-en="Real ingredients" data-si="සැබෑ අමුද්‍රව්‍ය">Real ingredients</span></div>
+        <div class="floating-pill pill-two">🌿 <span data-en="Simple goodness" data-si="සරල හොඳකම">Simple goodness</span></div>
+        <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Website highlights">
+      <div><span>🥣</span><strong data-en="Easy recipes" data-si="පහසු වට්ටෝරු">Easy recipes</strong></div>
+      <div><span>🥬</span><strong data-en="Everyday ingredients" data-si="දිනපතා අමුද්‍රව්‍ය">Everyday ingredients</strong></div>
+      <div><span>🍛</span><strong data-en="Sri Lankan inspiration" data-si="ශ්‍රී ලාංකික රස">Sri Lankan inspiration</strong></div>
+      <div><span>💚</span><strong data-en="A balanced approach" data-si="සමබර ආහාර රටාවක්">A balanced approach</strong></div>
+    </section>
+
+    <section class="section recipe-section" id="recipes">
+      <div class="section-heading">
+        <div><span class="eyebrow" data-en="FROM OUR KITCHEN" data-si="අපේ මුළුතැන්ගෙයෙන්">FROM OUR KITCHEN</span><h2 data-en="Fresh ideas for <em>every day.</em>" data-si="හැම දවසකටම <em>අලුත් අදහස්.</em>">Fresh ideas for <em>every day.</em></h2></div>
+        <a class="text-link" href="#categories" data-en="Browse categories →" data-si="වර්ග බලන්න →">Browse categories →</a>
+      </div>
+      <div class="search-row">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search recipes or ingredients..." aria-label="Search recipes"><button id="clearSearch" type="button" aria-label="Clear search">×</button></label>
+        <div class="filter-buttons" id="filterButtons">
+          <button class="filter-button active" data-filter="all" data-en="All recipes" data-si="සියලු වට්ටෝරු">All recipes</button>
+          <button class="filter-button" data-filter="breakfast" data-en="Breakfast" data-si="උදෑසන ආහාර">Breakfast</button>
+          <button class="filter-button" data-filter="snacks" data-en="Snacks" data-si="කෙටි ආහාර">Snacks</button>
+          <button class="filter-button" data-filter="sri-lankan" data-en="Sri Lankan" data-si="ශ්‍රී ලාංකික">Sri Lankan</button>
+        </div>
+      </div>
+      <div class="recipe-grid" id="recipeGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden data-en="No recipes found. Try another search." data-si="වට්ටෝරු හමු වුණේ නැහැ. වෙනත් වචනයක් උත්සාහ කරන්න.">No recipes found. Try another search.</p>
+    </section>
+
+    <section class="category-section" id="categories">
+      <div class="section-heading centered"><div><span class="eyebrow" data-en="WHAT ARE YOU CRAVING?" data-si="ඔබට අද අවශ්‍ය මොනවාද?">WHAT ARE YOU CRAVING?</span><h2 data-en="Explore by <em>category.</em>" data-si="ආහාර <em>වර්ග අනුව බලන්න.</em>">Explore by <em>category.</em></h2></div></div>
+      <div class="category-grid">
+        <button class="category-card cat-green" data-category="breakfast"><span>🍳</span><strong data-en="Breakfast" data-si="උදෑසන ආහාර">Breakfast</strong><small data-en="Start your day well" data-si="දවස හොඳින් අරඹන්න">Start your day well</small></button>
+        <button class="category-card cat-yellow" data-category="snacks"><span>🍌</span><strong data-en="Healthy snacks" data-si="සෞඛ්‍යමත් කෙටි ආහාර">Healthy snacks</strong><small data-en="Little bites, big joy" data-si="කුඩා ආහාර, ලොකු සතුටක්">Little bites, big joy</small></button>
+        <button class="category-card cat-pink" data-category="lunch"><span>🥙</span><strong data-en="Lunch & dinner" data-si="දිවා හා රාත්‍රී ආහාර">Lunch & dinner</strong><small data-en="Simple and satisfying" data-si="පහසු සහ තෘප්තිමත්">Simple and satisfying</small></button>
+        <button class="category-card cat-blue" data-category="sri-lankan"><span>🍛</span><strong data-en="Sri Lankan favourites" data-si="ශ්‍රී ලාංකික ප්‍රියතම කෑම">Sri Lankan favourites</strong><small data-en="Local taste, fresh ideas" data-si="දේශීය රසයට අලුත් අදහස්">Local taste, fresh ideas</small></button>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-icon">✉</div>
+      <div class="newsletter-copy"><span class="eyebrow" data-en="A LITTLE FRESHNESS IN YOUR INBOX" data-si="ඔබේ inbox එකට නැවුම් අදහස්">A LITTLE FRESHNESS IN YOUR INBOX</span><h2 data-en="Fresh ideas, <em>now and then.</em>" data-si="අලුත් අදහස්, <em>වරින් වර.</em>">Fresh ideas, <em>now and then.</em></h2><p data-en="Our email sign-up is coming soon. Follow along for easy recipes and kitchen inspiration." data-si="Email ලියාපදිංචිය ඉක්මනින් ලබාදෙන්නෙමු. පහසු වට්ටෝරු සහ මුළුතැන්ගෙයි අදහස් සඳහා අප සමඟ රැඳී සිටින්න.">Our email sign-up is coming soon. Follow along for easy recipes and kitchen inspiration.</p></div>
+      <a class="button button-primary" href="#contact" data-en="Get in touch ↗" data-si="අප අමතන්න ↗">Get in touch ↗</a>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-illustration"><div class="about-circle">🥑<span>+</span>🍋</div><div class="about-sticker">FRESH<br>EVERY DAY</div></div>
+      <div class="about-copy"><span class="eyebrow" data-en="HELLO, FOOD LOVERS" data-si="ආයුබෝවන්, ආහාර රසිකයනි">HELLO, FOOD LOVERS</span><h2 data-en="Healthy eating should feel <em>good, not complicated.</em>" data-si="සෞඛ්‍යමත් ආහාර ගැනීම <em>පහසුත් රසවත්ත් විය යුතුයි.</em>">Healthy eating should feel <em>good, not complicated.</em></h2><p data-en="FreshBite Kitchen is a growing collection of approachable recipes, everyday food ideas, and Sri Lankan-inspired dishes. Our goal is to make home cooking feel simple, joyful, and flexible." data-si="FreshBite Kitchen යනු පහසුවෙන් සකස් කළ හැකි වට්ටෝරු, දිනපතා ආහාර අදහස් සහ ශ්‍රී ලාංකික රසයෙන් ආභාසය ලැබූ කෑම එකතුවකි. ගෙදර ඉවුම් පිහුම් සරල, සතුටුදායක සහ ඔබට ගැළපෙන දෙයක් කිරීම අපේ අරමුණයි.">FreshBite Kitchen is a growing collection of approachable recipes, everyday food ideas, and Sri Lankan-inspired dishes. Our goal is to make home cooking feel simple, joyful, and flexible.</p><p class="small-note" data-en="Food information on this website is for general educational purposes and is not personal medical advice." data-si="මෙහි ආහාර තොරතුරු සාමාන්‍ය දැනුවත් කිරීම සඳහා පමණි. ඒවා පුද්ගලික වෛද්‍ය උපදෙස් නොවේ.">Food information on this website is for general educational purposes and is not personal medical advice.</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><span class="eyebrow" data-en="LET'S CONNECT" data-si="අපි සම්බන්ධ වෙමු">LET'S CONNECT</span><h2 data-en="Have a recipe idea?" data-si="ඔබට වට්ටෝරු අදහසක් තියෙනවාද?">Have a recipe idea?</h2><p data-en="We'd love to hear what you'd like to cook next." data-si="ඔබ ඊළඟට සකස් කරන්න කැමති කෑම ගැන අපට කියන්න.">We'd love to hear what you'd like to cook next.</p></div>
+      <a class="button button-outline dark-outline" href="mailto:hello@freshbitekitchen.example?subject=FreshBite%20Kitchen%20message">hello@freshbitekitchen.example ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">🥑</span><span><strong>FreshBite</strong><small> KITCHEN</small></span></a>
+    <p data-en="Made with care, one recipe at a time." data-si="එක් වට්ටෝරුව බැගින් ආදරයෙන් සකස් කළා.">Made with care, one recipe at a time.</p>
+    <div class="footer-links"><a href="#about" data-en="About" data-si="අප ගැන">About</a><a href="#contact" data-en="Contact" data-si="සම්බන්ධ වන්න">Contact</a><a href="#privacy" id="privacyLink" data-en="Privacy" data-si="පෞද්ගලිකත්වය">Privacy</a></div>
+    <small>© <span id="year"></span> FreshBite Kitchen. <span data-en="All rights reserved." data-si="සියලු හිමිකම් ඇවිරිණි.">All rights reserved.</span></small>
+  </footer>
+
+  <div class="modal-backdrop" id="recipeModal" hidden>
+    <article class="recipe-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close recipe">×</button>
+      <div class="modal-visual" id="modalVisual">🥣</div>
+      <div class="modal-body">
+        <span class="eyebrow" id="modalCategory">RECIPE</span>
+        <h2 id="modalTitle">Recipe title</h2>
+        <p id="modalDescription"></p>
+        <div class="recipe-meta modal-meta"><span>⏱ <b id="modalTime"></b></span><span>🍽 <b id="modalServings"></b></span><span>✦ <b id="modalLevel"></b></span></div>
+        <h3 data-en="Ingredients" data-si="අවශ්‍ය ද්‍රව්‍ය">Ingredients</h3><ul id="modalIngredients"></ul>
+        <h3 data-en="Method" data-si="සකස් කරන ආකාරය">Method</h3><ol id="modalSteps"></ol>
+        <p class="modal-tip" id="modalTip"></p>
+        <p class="small-note" data-en="Nutrition varies by ingredients and portion size. Adjust recipes to your needs." data-si="අමුද්‍රව්‍ය සහ ප්‍රමාණය අනුව පෝෂණ අගයන් වෙනස් විය හැකියි. ඔබට ගැළපෙන ලෙස සකස් කරන්න.">Nutrition varies by ingredients and portion size. Adjust recipes to your needs.</p>
+      </div>
+    </article>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

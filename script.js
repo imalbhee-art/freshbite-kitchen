@@ -51,6 +51,14 @@ const recipes = [
 
 let currentLanguage = "en";
 let currentFilter = "all";
+const recipeImages = {
+  "art-oats": "images/overnight-oats.jpg",
+  "art-smoothie": "images/banana-smoothie.jpg",
+  "art-salad": "images/chickpea-salad.jpg",
+  "art-banana": "images/banana-pancakes.jpg",
+  "art-yogurt": "images/banana-smoothie.jpg",
+  "art-rice": "images/vegetable-soup.jpg"
+};
 const recipeGrid = document.getElementById("recipeGrid");
 const searchInput = document.getElementById("searchInput");
 const emptyState = document.getElementById("emptyState");
@@ -69,7 +77,7 @@ function renderRecipes(){
   });
   recipeGrid.innerHTML = filtered.map(r=>`
     <article class="recipe-card" tabindex="0" role="button" aria-label="${escapeHTML(t(r.title))}" data-recipe="${r.id}">
-      <div class="recipe-art ${r.art}"><span class="food" aria-hidden="true">${r.emoji}</span></div>
+      <div class="recipe-art ${r.art}"><img src="${recipeImages[r.art] || "images/vegetable-soup.jpg"}" alt="${escapeHTML(t(r.title))}" loading="lazy"></div>
       <div class="recipe-card-body">
         <span class="card-category">${escapeHTML(t(r.categoryLabel))}</span>
         <h3>${escapeHTML(t(r.title))}</h3>
@@ -92,7 +100,7 @@ function renderRecipes(){
 }
 function openRecipe(id){
   const r=recipes.find(x=>x.id===id); if(!r)return;
-  document.getElementById("modalVisual").textContent=r.emoji;
+  document.getElementById("modalVisual").innerHTML=`<img src="${recipeImages[r.art] || "images/vegetable-soup.jpg"}" alt="${escapeHTML(t(r.title))}">`;
   document.getElementById("modalVisual").className="modal-visual "+r.art;
   document.getElementById("modalCategory").textContent=t(r.categoryLabel).toLocaleUpperCase();
   document.getElementById("modalTitle").textContent=t(r.title);
